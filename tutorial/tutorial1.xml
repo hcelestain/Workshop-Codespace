@@ -8,4 +8,105 @@ and follow along with instructors.
 
 <?xml-model href="../schema/cyclus.rng"
              type="application/xml"
-             schematypens="http://relaxng.org/ns/structure/1.0"?>
+             schematypens="http://relaxng.org/ns/structure/1.0"?> 
+ 
+<control>
+    <startyear>2007</startyear> 
+    <startmonth>11</startmonth>
+    <duration>1200</duration>
+    <dt>86400</dt>
+    <decay>lazy</decay>
+</control> 
+
+<commodity>
+   <name>enriched_u</name> 
+   <solution_priority>5.5</solution_priority>
+</commodity> 
+
+<archetypes>
+    <spec>
+        <path>my/custom/path</path>
+        <lib>myAgentCollection</lib>
+        <name>myFirstReactorAgent</name>
+        <alias>ReactorAgent</alias>
+    <spec>
+    <spec>
+        <name>simpleRegion</name>
+    </spec>
+    <spec>
+        <name>simpleInst</name>
+    <spec>
+</archetypes> 
+
+<facility> 
+    <name>LongTermStorage</name>
+    <config>
+        <Sink>
+           ...archetype-specific input for a 'Sink' archetype
+        </Sink>
+    </config>
+</facility> 
+
+<facility>
+    <name>PBMR</name>
+    <config>
+        <RecipeReactor>
+            ...archetype-specific input for a 'RecipeReactor' archetype
+        </RecipeReactor>
+    </config>
+</facility> 
+
+<region>
+    <name>MyHomeRegion</name>
+    <config> <NullRegion/> </config>
+    <institution>
+        ... data for this institution goes here
+    </institution>
+</region>
+
+<region>
+    <name>MyNeighborRegion</name>
+    <config>
+        <GrowthRegion>
+            ...archetype-specific input for a 'GrowthRegion' archetype
+        </GrowthRegion>
+    </config> 
+    <institution>
+        ...data for this instiution goes here
+    </institution>
+</region> 
+
+<institution>
+    <name>SingleInstitution</name>
+    <initialfacilitylist>
+        <entry> 
+            <prototype>FacilityB</prototype>
+                <number>1</number>
+        <entry>
+    </initialfacilitylist>
+    <config> <NullInst/> </config>
+</institution>
+
+<instiution>
+    <name>AnotherInstiution</name>
+    <config> <NullInst/></config>
+</instiution> 
+
+<recipe>
+    <name>proton_recipe</name>
+    <basis>mass</basis>
+    <nuclide>
+        <id>010010000</id>
+    </nuclide>
+</recipe> 
+
+<recipe>
+    <name>natU_recipe</name>
+    <basis>atom</basis>
+    <nuclide>
+        <id>922350000</id><comp>0.007</comp>
+    </nuclide>
+    <nuclide>
+        <id>922380000</id><comp>0.993</comp>
+    </nuclide>
+</recipe>
