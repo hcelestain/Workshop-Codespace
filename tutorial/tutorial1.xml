@@ -109,4 +109,20 @@ and follow along with instructors.
     <nuclide>
         <id>922380000</id><comp>0.993</comp>
     </nuclide>
-</recipe>
+</recipe> 
+
+<simulation>
+
+    <archetypes>
+        <spec>
+            <path></path>
+            <lib>agents</lib>
+            <name>KFacility</name>
+            <alias>myfac1</alias>
+        </spec>
+
+        <spec>
+            
+        </spec>
+    </archetypes>
+</simulation>
