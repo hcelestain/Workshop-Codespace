@@ -263,4 +263,31 @@
       </FuelFab>
     </config>
   </facility>
+  <institution>
+    <name>ExampleInstitution</name>
+    <config>
+      <DeployInst>
+        <prototypes>
+          <val>UraniumMine</val>
+          <val>FuelFab</val>
+          <val>1178MWe ReactorPlant Unit 1</val>
+          <val>1000MWe Lightwater_1</val>
+        </prototypes>
+
+        <build_times>
+          <val>1</val>
+          <val>1</val>
+          <val>2</val>
+          <val>3</val>
+        </build_times>
+
+        <n_build>
+          <val>1</val>
+          <val>1</val>
+          <val>2</val>
+          <val>3</val>
+        </n_build>
+      </DeployInst>
+    </config>
+  </institution>
 </simulation>
