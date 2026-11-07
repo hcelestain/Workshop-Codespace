@@ -35,7 +35,8 @@
         <product_commod>enriched_u</product_commod>
         <tails_commod>ef_tails</tails_commod>
         <feed_recipe>natl_u</feed_recipe>
-        <tails_assay>0.002</tails_assay>
+        <tails_assay>0.003</tails_assay> 
+        <swu_capacity>5</swu_capacity>
         <max_feed_inventory>500</max_feed_inventory>
       </Enrichment>
     </config>
